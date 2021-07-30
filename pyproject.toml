@@ -10,6 +10,8 @@ Flask = "^2.0.1"
 python-dotenv = "^0.19.0"
 Frozen-Flask = "^0.18"
 Flask-FlatPages = "^0.7.3"
+Pygments = "^2.9.0"
+pymdown-extensions = "^8.2"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"
