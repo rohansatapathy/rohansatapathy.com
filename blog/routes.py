@@ -10,7 +10,7 @@ def index():
     return render_template('posts.html', posts=pages)
 
 
-@app.route('/<path:path>/')
+@app.route('/blog/<path:path>/')
 def page(path):
     post = pages.get_or_404(path)
     return render_template('post.html', post=post, title=post['title'])
@@ -21,7 +21,7 @@ def about_me():
     return render_template('about_me.html', title='About Me')
 
 
-@app.route('/posts/')
+@app.route('/blog/posts/')
 def posts():
     return render_template('posts.html', title="Posts", posts=pages)
 

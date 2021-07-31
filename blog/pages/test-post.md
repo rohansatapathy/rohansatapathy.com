@@ -35,6 +35,8 @@ Here is some more text, and this one even has inline code: `#!py3 [x for x in ra
 2. Item 2
 3. Item 3
 
+And here is some math: $y = mx + b$ .
+
 ```{ .python }
 # This is a code block
 
