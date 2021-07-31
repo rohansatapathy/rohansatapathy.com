@@ -1,6 +1,6 @@
 # rohansatapathy.com
 
-This is the code for my personal blog, [rohansatapathy.com](rohansatapathy.com). It's a static site built with Python and Flask,
+This is the code for my personal blog, [rohansatapathy.com](https://www.rohansatapathy.com). It's a static site built with Python and Flask,
 along with some Flask extensions to render the blog posts from markdown files. 
 
 # Contributing
