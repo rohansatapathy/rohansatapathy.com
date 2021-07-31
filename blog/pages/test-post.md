@@ -1,7 +1,7 @@
 title: My First Entry
 date: 26 June 2021
 author: Rohan Satapathy
-published: false
+published: true
 
 
 This is my *first* post! Woohoo!
