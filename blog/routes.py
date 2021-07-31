@@ -7,13 +7,13 @@ from blog import app, pages
 
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('posts.html', posts=pages)
 
 
 @app.route('/<path:path>/')
 def page(path):
     post = pages.get_or_404(path)
-    return render_template('post.html', post=post, title=post.meta['title'])
+    return render_template('post.html', post=post, title=post['title'])
 
 
 @app.route('/about-me/')
@@ -23,7 +23,7 @@ def about_me():
 
 @app.route('/posts/')
 def posts():
-    return "Posts"
+    return render_template('posts.html', title="Posts", posts=pages)
 
 
 @app.route('/pygments.css/')
