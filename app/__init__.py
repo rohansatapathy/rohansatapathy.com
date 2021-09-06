@@ -9,4 +9,4 @@ app.config.from_object(Config)
 pages = FlatPages(app)
 
 
-from blog import routes
+from app import routes
