@@ -2,7 +2,7 @@ from flask import render_template, redirect, url_for
 from flask_flatpages import pygmented_markdown, pygments_style_defs
 from pygments.formatters import HtmlFormatter
 
-from blog import app, pages
+from app import app, pages
 
 
 @app.route('/')

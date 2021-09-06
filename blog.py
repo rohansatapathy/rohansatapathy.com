@@ -1,1 +1,1 @@
-from blog import app
+from app import app
