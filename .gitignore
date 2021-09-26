@@ -1,5 +1,8 @@
 .vscode/
 .flaskenv
 __pycache__/
-pages/
+
+# For certificates in production server
 certs/
+# Use '_' prefix for private and test posts
+app/pages/_*.md
