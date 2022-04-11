@@ -2,15 +2,13 @@
 
 {% block content %}
   {% for post in posts %}
-    {% if post.published %}
-      <div class="row justify-content-center my-4">
-        <div class="col-3">
-          <p class="text-end text-muted">{{ post.date }}</p>
-        </div>
-        <div class="col-9">
-          <a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a> - {{ post.desc }}
-        </div>
+    <div class="row justify-content-center my-4">
+      <div class="col-3">
+        <p class="text-end text-muted">{{ post.date }}</p>
       </div>
-    {% endif %}
+      <div class="col-9">
+        <a href="{{ url_for('page', path=post.path) }}">{{ post.title }}</a> - {{ post.desc }}
+      </div>
+    </div>
   {% endfor %}
 {% endblock %}
