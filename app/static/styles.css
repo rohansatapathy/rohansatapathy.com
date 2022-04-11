@@ -1,13 +1,48 @@
 body {
-  font-family: 'Cabin', sans-serif;
+  font-family: Gelasio, sans-serif;
   font-size: 18px;
 }
 
+:is(p, ul, ol) {
+  line-height: 200%;
+  color: rgb(69, 69, 69);
+}
+
 :is(h1, h2, h3, h4, h5, h6), .nav-item, .navbar-brand {
-  font-family: 'Poppins', sans-serif;
+  font-family: Poppins, sans-serif;
+}
+
+:is(h1, h2, h3, h4, h5, h6) {
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+:is(h2, h3, h4, h5, h6) {
+  margin-top: 2rem;
 }
 
 h1 {
-  font-weight: bold;
   font-size: 46px;
+}
+
+pre {
+  margin-bottom: 0;
+}
+
+code {
+  font-size: 15px;
+  font-family: Fira Mono, monospace;
+}
+
+.p {
+  font-weight: 400 !important;
+}
+
+[data-linenos]:before {
+  content: attr(data-linenos);
+  color: hsl(208, 7%, 60%) !important
+}
+
+img {
+  max-width: 100%;
 }
