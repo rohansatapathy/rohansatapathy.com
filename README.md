@@ -12,4 +12,4 @@ Feel free to fork this repo if you want to use it as a base for your own website
 
 # License
 
-Copyright (C) Rohan Satapathy 2021, code released under MIT License (see [LICENSE](./LICENSE) for more information)
+Copyright (C) Rohan Satapathy 2022, code released under MIT License (see [LICENSE](./LICENSE) for more information)
