@@ -10,15 +10,14 @@ authors = [
     {name = "Rohan Satapathy", email = "61920401+rohansatapathy@users.noreply.github.com"},
 ]
 dependencies = [
-    "Flask<3.0.0,>=2.0.1",
-    "python-dotenv<1.0.0,>=0.19.0",
-    "Frozen-Flask<1.0,>=0.18",
+    "Flask>=2.2",
+    "python-dotenv",
     "Flask-FlatPages<1.0.0,>=0.7.3",
     "Pygments<3.0.0,>=2.9.0",
-    "pymdown-extensions<10.0,>=9.4",
+    "pymdown-extensions>=9.4",
     "gunicorn<21.0.0,>=20.1.0",
 ]
-requires-python = "<4.0,>=3.7"
+requires-python = "<4.0,>=3.9"
 readme = "README.md"
 license = {text = "MIT"}
 
