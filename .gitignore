@@ -6,3 +6,6 @@ __pycache__/
 certs/
 # Use '_' prefix for private and test posts
 app/pages/_*.md
+
+.venv/
+.pdm-python
