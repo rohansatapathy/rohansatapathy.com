@@ -1,8 +1,9 @@
 class Config:
-    """Class to store configuration variables for blog"""
+    """Class to store configuration variables for blog."""
 
     # FlatPages config
     DEBUG = True
+    FLATPAGES_ROOT = "../posts/"
     FLATPAGES_EXTENSION = ".md"
     FLATPAGES_AUTO_RELOAD = DEBUG
     FLATPAGES_MARKDOWN_EXTENSIONS = [

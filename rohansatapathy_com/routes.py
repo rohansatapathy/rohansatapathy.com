@@ -1,8 +1,7 @@
-from flask import render_template, redirect, url_for
-from flask_flatpages import pygmented_markdown, pygments_style_defs
+from flask import render_template
 from pygments.formatters import HtmlFormatter
 
-from app import app, pages
+from .app import app, pages
 
 
 @app.route("/")
@@ -21,7 +20,7 @@ def about_me():
     return render_template("about_me.html", title="About Me")
 
 
-@app.route("/blog/posts/")
+@app.route("/blog/")
 def posts():
     return render_template("posts.html", title="Posts", posts=pages)
 

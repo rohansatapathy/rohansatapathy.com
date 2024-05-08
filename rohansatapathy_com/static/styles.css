@@ -34,7 +34,6 @@ blockquote {
   padding-bottom: 1rem;
   margin-bottom: 1rem;
   background-color: rgb(248, 248, 248);
-  border: 1px solid rgb(222, 226, 230);
   border-left: 4px solid rgb(222, 226, 230);
   border-radius: 0.3rem;
   font-style: italic;
@@ -63,5 +62,9 @@ code {
 }
 
 img {
+  max-height: 20em;
   max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
