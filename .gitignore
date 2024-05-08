@@ -5,7 +5,7 @@ __pycache__/
 # For certificates in production server
 certs/
 # Use '_' prefix for private and test posts
-app/pages/_*.md
+posts/_*.md
 
 .venv/
 .pdm-python
