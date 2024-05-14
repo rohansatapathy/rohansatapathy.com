@@ -48,8 +48,8 @@ pre {
 }
 
 code {
+  font-family: "Fira Code", monospace;
   font-size: 15px;
-  font-family: Fira Mono, monospace;
 }
 
 .p {
