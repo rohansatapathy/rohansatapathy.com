@@ -1,3 +1,6 @@
+import pymdownx.arithmatex as arithmatex
+
+
 class Config:
     """Class to store configuration variables for blog."""
 
@@ -19,6 +22,13 @@ class Config:
         },
         "pymdownx.superfences": {
             "css_class": "highlight px-3 py-3 mw-100 rounded-3 border mb-3",
+            "custom_fences": [
+                {
+                    "name": "math",
+                    "class": "arithmatex",
+                    "format": arithmatex.arithmatex_fenced_format(which="generic"),
+                }
+            ],
         },
         "pymdownx.inlinehilite": {
             "css_class": "highlight px-1 rounded-1 border",
