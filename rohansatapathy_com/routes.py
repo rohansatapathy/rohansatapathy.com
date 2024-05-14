@@ -6,7 +6,8 @@ from .app import app, pages
 
 @app.route("/")
 def index():
-    return render_template("posts.html", posts=pages)
+    posts = sorted(pages, reverse=True, key=lambda p: p.meta["date"])
+    return render_template("posts.html", posts=posts)
 
 
 @app.route("/blog/<path:path>/")
