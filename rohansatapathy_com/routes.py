@@ -16,9 +16,9 @@ def page(path):
     return render_template("post.html", post=post, title=post["title"])
 
 
-@app.route("/about-me/")
+@app.route("/about/")
 def about_me():
-    return render_template("about_me.html", title="About Me")
+    return render_template("about.html", title="About Me")
 
 
 @app.route("/blog/")
