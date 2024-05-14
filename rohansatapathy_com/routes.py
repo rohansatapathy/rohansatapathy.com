@@ -1,6 +1,8 @@
 from flask import render_template
 from pygments.formatters import HtmlFormatter
 
+from rohansatapathy_com.styles import IALight
+
 from .app import app, pages
 
 
@@ -28,5 +30,5 @@ def posts():
 
 @app.route("/pygments.css/")
 def pygments_css():
-    formatter = HtmlFormatter(style="tango")
+    formatter = HtmlFormatter(style=IALight)
     return formatter.get_style_defs(".highlight"), 200, {"Content-Type": "text/css"}
