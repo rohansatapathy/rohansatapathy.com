@@ -72,3 +72,7 @@ img {
 .blog-width {
   max-width: 850px; 
 }
+
+.posts-date {
+  font-size: 14.5px;
+}
