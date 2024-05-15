@@ -75,4 +75,7 @@ img {
 
 .posts-date {
   font-size: 14.5px;
+  min-width: 5.3rem;
+  padding-top: 0.2rem;
+  font-style: italic;
 }
