@@ -5,9 +5,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {% if title %}
-    <title>{{ title }} | Rohan's Blog</title>
+    <title>{{ title }} | Rohan Satapathy</title>
   {% else %}
-    <title>Rohan's Blog</title>
+    <title>Rohan Satapathy</title>
   {% endif %}
 
   <!-- Bootstrap CSS -->
@@ -35,17 +35,17 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-sm bg-light justify-content-center">
     <div class="container-sm blog-width">
-      <a href="{{ url_for('index') }}" class="navbar-brand text-uppercase">Rohan's Blog</a>
+      <a href="{{ url_for('index') }}" class="navbar-brand text-uppercase">Rohan Satapathy</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item">
-            <a href="{{ url_for('about_me') }}" class="nav-link text-uppercase">About Me</a>
+            <a href="{{ url_for('about') }}" class="nav-link text-uppercase">About</a>
           </li>
           <li class="nav-item">
-            <a href="{{ url_for('posts') }}" class="nav-link text-uppercase">Blog Posts</a>
+            <a href="{{ url_for('posts') }}" class="nav-link text-uppercase">Blog</a>
           </li>
         </ul>
       </div>

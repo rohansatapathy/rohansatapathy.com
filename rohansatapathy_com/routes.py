@@ -8,8 +8,7 @@ from .app import app, pages
 
 @app.route("/")
 def index():
-    posts = sorted(pages, reverse=True, key=lambda p: p.meta["date"])
-    return render_template("posts.html", posts=posts)
+    return posts()
 
 
 @app.route("/blog/<path:path>/")
@@ -19,13 +18,14 @@ def page(path):
 
 
 @app.route("/about/")
-def about_me():
+def about():
     return render_template("about.html", title="About Me")
 
 
 @app.route("/blog/")
 def posts():
-    return render_template("posts.html", title="Posts", posts=pages)
+    posts = sorted(pages, reverse=True, key=lambda p: p.meta["date"])
+    return render_template("posts.html", title="Posts", posts=posts)
 
 
 @app.route("/pygments.css/")
