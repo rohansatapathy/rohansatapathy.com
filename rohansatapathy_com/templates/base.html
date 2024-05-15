@@ -33,8 +33,8 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light justify-content-center">
-    <div class="container-fluid px-5 col-lg-8">
+  <nav class="navbar navbar-expand-sm bg-light justify-content-center">
+    <div class="container-sm blog-width">
       <a href="{{ url_for('index') }}" class="navbar-brand text-uppercase">Rohan's Blog</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -53,7 +53,7 @@
   </nav>
 
   <div class="justify-content-center">
-    <div class="container-fluid px-4 my-5 col-lg-8">
+    <div class="container-sm blog-width my-5">
       {% block content %}{% endblock %}
     </div>
   </div>
