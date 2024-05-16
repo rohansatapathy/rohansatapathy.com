@@ -21,7 +21,7 @@ class Config:
             "linenums_style": "pymdownx-inline",
         },
         "pymdownx.superfences": {
-            "css_class": "highlight px-3 py-3 mw-100 rounded-3 border mb-3",
+            "css_class": "highlight p-3 mw-100 rounded-3 border mb-3",
             "custom_fences": [
                 {
                     "name": "math",
