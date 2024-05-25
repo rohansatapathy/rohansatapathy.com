@@ -120,6 +120,7 @@ img {
   display: none;
   width: 90%;
   height: 90%;
+  color: var(--bs-secondary-color);
 }
 
 [data-theme="light"] #light-icon {
