@@ -13,7 +13,7 @@ def index():
     return posts()
 
 
-@app.route("/blog/<path:path>/")
+@app.route("/blog/<path:path>")
 def post(path):
     post = pages.get_or_404(path)
     WORDS_PER_MIN = 130
@@ -24,7 +24,7 @@ def post(path):
     )
 
 
-@app.route("/about/")
+@app.route("/about")
 def about():
     return render_template("about.html", title="About Me")
 
@@ -37,7 +37,7 @@ def posts():
     )
 
 
-@app.route("/pygments.css/")
+@app.route("/pygments.css")
 def pygments_css():
     formatter = HtmlFormatter(style=IALight)
     return formatter.get_style_defs(".highlight"), 200, {"Content-Type": "text/css"}
