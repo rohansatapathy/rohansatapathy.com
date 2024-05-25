@@ -1,3 +1,5 @@
+import math
+
 from flask import render_template
 from pygments.formatters import HtmlFormatter
 
@@ -14,7 +16,12 @@ def index():
 @app.route("/blog/<path:path>/")
 def post(path):
     post = pages.get_or_404(path)
-    return render_template("post.html", post=post, title=post["title"])
+    WORDS_PER_MIN = 130
+    num_words = len([word for word in post.body.split() if word.isalnum()])
+    read_time = math.ceil(num_words / WORDS_PER_MIN)
+    return render_template(
+        "post.html", post=post, title=post["title"], read_time=read_time
+    )
 
 
 @app.route("/about/")

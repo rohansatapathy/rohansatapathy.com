@@ -1,5 +1,5 @@
 body {
-  font-family: Gelasio, sans-serif;
+  font-family: Gelasio, serif;
   font-size: 18px;
 }
 
@@ -22,11 +22,11 @@ body {
 }
 
 h1 {
-  font-size: 46px;
+  font-size: 40px;
 }
 
 blockquote {
-  font-family: Gelasio, sans-serif;
+  font-family: Gelasio, serif;
   font-size: 18px;
   padding-left: 2rem;
   padding-right: 2rem;
@@ -85,7 +85,7 @@ img {
 }
 
 .posts-date {
-  font-size: 14.5px;
+  font-size: 16px;
   min-width: 5.3rem;
   padding-top: 0.2rem;
   font-style: italic;
@@ -100,7 +100,12 @@ img {
 }
 
 .post-title {
-  background-color: var(--bs-tertiary-bg);
+}
+
+.post-subtitle {
+  font-family: Gelasio, serif;
+  font-size: 14.5px;
+  font-style: italic;
 }
 
 #theme-button {

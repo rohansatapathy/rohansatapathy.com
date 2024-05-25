@@ -2,11 +2,11 @@
 
 
 {% block content %}
-  <div class="post-title border rounded-2 py-4">
-    <h1 class="my-3 text-center">{{ post.title }}</h1>
-    <h6 class="my-3 text-center">{{ post.date.strftime("%d %b %Y") }}</h6>
+  <div>
+    <h1 class="post-title my-3">{{ post.title }}</h1>
+    <h6 class="post-subtitle text-muted my-3">{{ post.date.strftime("%d %b %Y") }} | {{ read_time }} min read</h6>
   </div>
-  <div class="py-5">
+  <div class="my-4">
       {{ post }}
   </div>
 {% endblock %}
