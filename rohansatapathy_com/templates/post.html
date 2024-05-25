@@ -4,9 +4,15 @@
 {% block content %}
   <div>
     <h1 class="post-title my-3">{{ post.title }}</h1>
-    <h6 class="post-subtitle text-muted my-3">{{ post.date.strftime("%d %b %Y") }} | {{ read_time }} min read</h6>
+    <h6 class="post-subtitle text-muted my-3">    
+    {% if post.title == "About Me" %}
+      Last updated {{ post.date.strftime("%d %b %Y") }}
+    {% else %}
+      {{ post.date.strftime("%d %b %Y") }} | {{ read_time }} min read
+    {% endif %}
+    </h6>
   </div>
   <div class="my-4">
-      {{ post }}
+    {{ post }}
   </div>
 {% endblock %}

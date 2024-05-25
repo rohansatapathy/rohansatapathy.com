@@ -26,7 +26,8 @@ def post(path):
 
 @app.route("/about")
 def about():
-    return render_template("about.html", title="About Me")
+    about_post = pages.get_or_404("about")
+    return render_template("post.html", post=about_post, title=about_post["title"])
 
 
 @app.route("/blog/")
