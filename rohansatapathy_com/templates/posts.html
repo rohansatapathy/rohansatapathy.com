@@ -2,13 +2,15 @@
 
 {% block content %}
   {% for post in posts %}
-    <div class="row my-3">
-      <div class="col-xs-12 col-sm-2">
-        <p class="posts-date text-xs-start text-sm-end text-muted">{{ post.date.strftime("%d %b %Y") }}</p>
+    {% if debug or post.published %}
+      <div class="row my-3">
+        <div class="col-xs-12 col-sm-2">
+          <p class="posts-date text-xs-start text-sm-end text-muted">{{ post.date.strftime("%d %b %Y") }}</p>
+        </div>
+        <div class="col-xs-12 col-sm-10">
+          <p><a href="{{ url_for('post', path=post.path) }}">{{ post.title }}</a> - {{ post.desc }}</p>
+        </div>
       </div>
-      <div class="col-xs-12 col-sm-10">
-        <p><a href="{{ url_for('post', path=post.path) }}">{{ post.title }}</a> - {{ post.desc }}</p>
-      </div>
-    </div>
+    {% endif %}
   {% endfor %}
 {% endblock %}

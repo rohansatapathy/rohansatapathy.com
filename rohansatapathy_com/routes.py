@@ -32,7 +32,9 @@ def about():
 @app.route("/blog/")
 def posts():
     posts = sorted(pages, reverse=True, key=lambda p: p.meta["date"])
-    return render_template("posts.html", title="Posts", posts=posts)
+    return render_template(
+        "posts.html", title="Posts", posts=posts, debug=app.config["DEBUG"]
+    )
 
 
 @app.route("/pygments.css/")

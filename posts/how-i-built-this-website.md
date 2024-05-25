@@ -1,7 +1,10 @@
+---
 title: How I Built This Website
 author: Rohan Satapathy
 date: 2022-04-25
 desc: A summary of my journey building this website
+published: true
+---
 
 Hello and welcome to my first post! In this post, I'll be explaining how I built my blog, some of the issues I had along the way, and how I solved them. This project took a considerable amount of time as it's is the first complete project that I've made, but I had a lot of fun doing it and I'm pretty proud of how it turned out! If you would like to see the code for the blog, I've made it [open source on GitHub](https://github.com/rohansatapathy/rohansatapathy.com) so anyone can check it out and even use it as a base for their own blog. 
 
