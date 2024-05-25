@@ -1,5 +1,6 @@
 .vscode/
 .flaskenv
+.env
 __pycache__/
 
 # For certificates in production server

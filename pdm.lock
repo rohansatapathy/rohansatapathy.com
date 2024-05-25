@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:5c8e705f39a702b74f31e210aef213dd3d405305147a11fb3bb92347bee94d7c"
+content_hash = "sha256:a37884469ca6506967b55424b167ef44b49ecf0cdf3b3f79ebe1dc13f6e0b8ac"
 
 [[package]]
 name = "blinker"

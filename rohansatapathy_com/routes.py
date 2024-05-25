@@ -1,11 +1,16 @@
 import math
+import os
 
+from dotenv import load_dotenv
 from flask import render_template
 from pygments.formatters import HtmlFormatter
 
 from rohansatapathy_com.styles import IALight
 
 from .app import app, pages
+
+
+load_dotenv()
 
 
 @app.route("/")
@@ -34,7 +39,7 @@ def about():
 def posts():
     posts = sorted(pages, reverse=True, key=lambda p: p.meta["date"])
     return render_template(
-        "posts.html", title="Posts", posts=posts, debug=app.config["DEBUG"]
+        "posts.html", title="Posts", posts=posts, prod=os.getenv("PROD")
     )
 
 
