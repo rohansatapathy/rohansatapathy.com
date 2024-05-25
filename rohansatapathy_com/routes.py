@@ -12,7 +12,7 @@ def index():
 
 
 @app.route("/blog/<path:path>/")
-def page(path):
+def post(path):
     post = pages.get_or_404(path)
     return render_template("post.html", post=post, title=post["title"])
 
