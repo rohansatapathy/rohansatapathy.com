@@ -15,15 +15,9 @@ and refactoring LabGym's codebase, I got to learn about the math behind
 deep-learning-based computer vision models like Mask R-CNN, which I think is
 really cool.
 
-At the moment, I'm working on two projects. I've recently been getting into
-programming language design, and I'm working on
-[glox](https://github.com/rohansatapathy/glox), an interpreter written in Go
-for a high-level, dynamically typed language called Lox. I'm also an
-undergraduate research assistant at the [Burgers
-Lab](https://quantumopticslab.engin.umich.edu/), a quantum optics lab at
-Michigan. Although I'm still in the (very) early stages, I'm gaining
-hands-on skills in PCB design while also exploring the basics of quantum
-computing.
+At the moment, I'm working on [glox](https://github.com/rohansatapathy/glox),
+an interpreter written in Go for a high-level, dynamically typed language
+called Lox. Check out my blog for updates on how the project is going.
 
 ## About This Website
 
